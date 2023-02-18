@@ -1,5 +1,7 @@
 package arraysUse;
 
+import java.util.Arrays;
+
 public class TwoDimArray {
     public static void main(String[] args) {
         // Declaration of 2D Array
@@ -7,8 +9,6 @@ public class TwoDimArray {
                 {4,5,6},
                 {7,8,9}
         };
-
-
 
         int b[][]=new int[3][4];
 
@@ -25,7 +25,31 @@ public class TwoDimArray {
         b[2][2]=73454;
         b[2][3]=7345345;
 
-        System.out.println("Printing numbeer 8 from array a : "+ a[2][1]);
+        // iterate over for loop
+        for (int i = 0; i < b.length ; i++) {
+            for (int j = 0; j <b[i].length ; j++) {
+                System.out.print(b[i][j]+ " ");
+            }
+            System.out.println();
+
+        }
+
+        System.out.println("************** ********* *************");
+
+        //iterate over for each loop
+        for (int[] arow:a
+             ) {
+            for (int acol:arow
+                 ) {
+                System.out.print(acol + " ");
+            }
+            System.out.println();
+        }
+
+        System.out.println("/////////////////////////");
+
+      //  System.out.println("Printing numbeer 8 from array a : "+ a[2][1]);
+        System.out.println(Arrays.deepToString(b) );
 
     }
 }
