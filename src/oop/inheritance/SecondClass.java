@@ -19,4 +19,6 @@ public class SecondClass extends FirstClass { //Single inheritance
         int product=a*b;
         System.out.println(product);
     }
+
+
 }

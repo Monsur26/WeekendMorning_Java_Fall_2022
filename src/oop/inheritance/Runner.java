@@ -17,5 +17,8 @@ public class Runner {
         obj2.MathOperations(5,10); // Multiplication
         obj3.MathOperations(5,10); //Addition
         obj4.MathOperations(5,10); //division
+
+        int secondAge=obj1.age=10;
+        System.out.println("Age : "+ secondAge);
     }
 }
